@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putih_transparan"
+    android:layout_margin="8dp">
+    <ImageView
+        android:id="@+id/imageorang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imageorang"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txt_nama_pengirim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="Nama Pengirim"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintStart_toEndOf="@id/imageorang"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="Title"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/imageorang"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama_pengirim" />
+    <TextView
+        android:id="@+id/txt_tanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="Tanggal"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_nama_pengirim" />
+    <TextView
+        android:id="@+id/txt_pesan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text=""
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+    <ImageView
+        android:id="@+id/imagebintang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_star_border_24"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_title"
+        app:layout_constraintEnd_toEndOf="@id/txt_tanggal"
+        app:layout_constraintTop_toTopOf="@+id/txt_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

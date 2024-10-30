@@ -226,6 +226,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_title" />
     </LinearLayout>
 
+<!--    bagian reply-->
     <LinearLayout
         android:id="@+id/reply"
         android:layout_width="match_parent"
